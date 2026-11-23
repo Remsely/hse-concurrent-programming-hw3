@@ -17,8 +17,8 @@ import java.util.concurrent.atomic.AtomicLong;
 @BenchmarkMode(Mode.Throughput)
 @OutputTimeUnit(TimeUnit.SECONDS)
 @Fork(1)
-@Warmup(iterations = 3, time = 1)
-@Measurement(iterations = 5, time = 1)
+@Warmup(iterations = 5, time = 2)
+@Measurement(iterations = 7, time = 2)
 public class CounterBenchmark {
 
     @State(Scope.Benchmark)
